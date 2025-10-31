@@ -1,0 +1,414 @@
+@charset "utf-8";
+
+/* index.css */
+
+/* 
+구글 웹폰트
+
+1) 영문
+Use a value from 300 to 900
+font-family: "Merriweather", serif;
+
+2) 한글
+font-family: "Nanum Gothic", sans-serif;
+font-weight: 400 | 700 | 800;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    /* display: block; */
+}
+
+ul::after,
+ol::after {
+    /* li의 부모요소 이용해서 float 해제 */
+    content: "";
+    /* 가상요소 */
+    display: block;
+    clear: both;
+}
+
+/* ****************여기까지 리셋**************** */
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.header-menu1 {
+    background-color: #ccc;
+
+    width: 100%;
+    height: 35px;
+
+
+}
+
+
+.header-menu1 ul {
+
+
+    margin: 0 auto;
+    line-height: 35px;
+
+
+}
+
+.header-menu1 ul li {
+    outline: 1px solid red;
+
+    margin-left: 15px;
+    float: left;
+
+}
+
+.header-menu1 ul li a {
+    color: rgb(53, 51, 51);
+    font-size: 15px;
+
+
+}
+
+.header-menu1 ul .coffeebaen-icon {
+    background-color: #2c1b04;
+    width: 60px;
+    text-align: center;
+}
+
+.header-menu1 ul li a img {}
+
+/* ** */
+
+.header-menu2 {
+
+    /* outline: 1px solid rgb(112, 66, 218); */
+
+    height: 100px;
+
+    margin: 0 auto;
+
+background-color: white;
+}
+
+.header-menu2 .logo {
+    float: left;
+
+    padding-top: 17px;
+}
+
+.header-menu2 .gnb {
+    /* outline: 1px solid red; */
+
+display: inline-block;
+text-align: center;
+
+    padding-top: 17px;
+
+}
+
+
+.header-menu2 .gnb ul li {
+    float: left;
+    margin: 20px;
+
+    /* outline: 1px solid red; */
+}
+
+.header-menu2 .gnb ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header-menu2 .gnb ul li a:hover {
+    color: #eb5215;
+}
+
+.header-menu2 .search {
+    float: right;
+    padding-top: 33px;
+
+}
+
+.header-menu2 .search input {
+    border-style: none;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 5px;
+}
+
+.header-menu2 .search img {
+
+    margin-left: 10px;
+}
+
+/* ****************여기까지 헤더**************** */
+
+section {
+    padding-top: 135px;
+}
+
+section .main-banner {
+    margin-bottom: -5px;
+    text-align: center;
+
+}
+
+section .main-event {
+    padding-bottom: 60px;
+    width: 100%;
+    text-align: center;
+}
+
+
+section .md-pick h2 {
+    text-align: center;
+    color: #eb5215;
+    font-weight: 500;
+    font-size: 40px;
+
+    padding-bottom: 100px;
+}
+
+section .md-pick-menu {
+    /* outline: 1px solid red; */
+
+text-align: center;
+
+    width: 70%;
+    margin: 0 auto;
+
+    padding-bottom: 100px;
+}
+
+section .md-pick-menu ul li {
+
+    text-align: center;
+    display: inline-block;
+    /* outline: 1px solid red; */
+}
+
+section .md-pick-menu ul li a {}
+
+section .md-pick-menu ul li a img {}
+
+section .md-pick-menu ul li p a {
+    color: black;
+    font-size: 24px;
+
+font-weight: 600;
+}
+
+section .md-pick-menu ul li .txt-box .mditem {
+
+    padding: 20px 0 20px;
+}
+
+section .md-pick-menu ul li .txt-box .mditem a:hover {
+    color: #eb5215;
+}
+
+section .md-pick-menu ul li .txt-box .mditem-name {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+section .md-pick-menu ul li .txt-box p.mditem-prise {
+    color: #eb5215;
+    font-size: 20px;
+}
+
+section .what-new h2 {
+    text-align: center;
+    color: #eb5215;
+    font-weight: 500;
+    font-size: 40px;
+
+    padding-bottom: 100px;
+}
+
+section .what-new .what-new-menu {
+    margin: 0 auto;
+    width: 70%;
+
+    text-align: center;
+
+    padding-bottom: 100px;
+}
+
+section .what-new .what-new-menu li {
+
+    text-align: center;
+    display: inline-block;
+
+    margin: 10px;
+
+}
+
+section .what-new .what-new-menu li a {}
+
+section .what-new .what-new-menu li p {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: #eb5215;
+}
+
+section .what-new .what-new-menu li p:hover {
+text-decoration: underline;
+color: #a0350b;
+}
+
+section .coffeebean-love {
+    width: 100%;
+    background-color: #6d2480;
+
+    color: white;
+    padding-bottom: 70px;
+}
+
+section .coffeebean-love h2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 40px;
+}
+
+section .coffeebean-love .sns-img {
+
+    max-width: 1680px;
+    text-align: center;
+
+    padding-bottom: 70px;
+    margin: 0 auto;
+
+}
+
+section .coffeebean-love .sns-img ul li {
+    text-align: center;
+    display: inline-block;
+
+}
+
+section .coffeebean-love .sns-img ul li a {
+
+}
+
+section .coffeebean-love .sns-img ul li a img {
+    width: 240px;
+
+}
+
+section .coffeebean-love h3 {
+    background-color: #ebb915;
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+
+    margin: 0 auto;
+}
+
+/* *********************여기까지 섹션******************* */
+
+footer {
+width: 100%;
+background-color: #e7e7e7;
+height: 100%;
+
+padding-bottom: 50px;
+}
+
+footer .footer-menu .sitemap {
+    text-align: center;
+border-bottom: 1px solid #666666;
+width: 1680px;
+
+margin: 0 auto;
+
+
+}
+
+footer .footer-menu .sitemap div {
+    text-align: left;
+    display: inline-block;
+
+        margin: 70px;
+
+        padding-bottom: 30px;
+}
+
+footer .footer-menu .sitemap h2 {
+    color: #eb5215;
+    padding-bottom: 30px;
+
+    font-size: 26px;
+}
+
+footer .footer-menu .sitemap li {
+    padding-bottom: 10px;
+}
+
+footer .footer-menu .sitemap li a {
+    color: #424242;
+font-size: 20px;
+
+}
+
+footer .footer-menu .footer-link {
+padding-top: 30px;
+max-width: 1680px;
+
+margin: 0 auto;
+}
+
+footer .footer-menu .footer-link .footer-submenu {
+
+}
+
+footer .footer-menu .footer-link .footer-submenu li {
+    float: left;
+
+    margin-right: 20px;
+
+font-size: 20px;
+}
+
+
+footer .footer-menu .footer-link .footer-submenu li a {
+  color: #424242;
+}
+
+
+footer .footer-menu .footer-link .footer-submenu-ico {
+    float: right;
+
+}
+
+footer .footer-menu .footer-link .footer-submenu-ico li {
+        float: left;
+            margin: 0 5px;
+}
+
+footer .footer-menu .footer-link p {
+padding-top: 10px;
+
+font-size: 18px;
+  color: #424242;
+}
+
+
+
+
+
+
+
